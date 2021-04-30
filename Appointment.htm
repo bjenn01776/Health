@@ -15,6 +15,11 @@ header {
 	background-color: darkgreen;
 	}
 
+	.demo {
+		background-color: coral;
+		width: 28%;
+	}
+
 .formfield {
 	background-color:  lightgray;
 	padding: 00px 84px;
@@ -23,30 +28,62 @@ header {
 .formField  label{ display:block;  }
 
 </style>
-</head>
 
+<script>
+	 
+	
+function bjTest() {
+
+	console.log( "fc bjTest!!!");
+
+ //	let  nm  = document.querySelector("nm");
+	let	 ema = document.getElementById("e_addr");
+	let pn_c = document.getElementById("phone_c");
+	let pn_h = document.getElementById("phone_h");
+	//let pn_w = document.getElementById("phone_w");
+
+	console.log( ema  );
+ 
+	//console.log(nm.value);
+	console.log(ema.value);
+	console.log(pn_c.value);
+	console.log(pn_h.value);
+
+	//document.getElementById("testID").innerHTML =  nm.value;
+	//document.getElementById("testID").innerHTML = ema.value;
+	//alert("bjtest Exec!!!");
+}
+</script>
+</head>
+<body>
 <header>
 	<h2>Contact Information</h2>
 </header>
 
 <div class="showcase">
-<h1>Dedicated</h1>
+	<h1>The path to wellness is now ....</h1><br>
+	<h2> Get Started,</h2>
 </div>
 
-<form>
-	<div class="formField">
+<div class ="demo" id='testID'>
+
+</div>
+
+<form class="formField" name="bjForm" id" >
+	 
 	<h2>Contact Information</h2>
 	<label>Name  </label>
-	<input style="text" name=?> </br>
+	<input type="text"id="nm" value="bill"> 
 	<label>Email</label>
-	<input style="email"  ema=?></br>
+	<input type="email"  id="e_addr"  value="bj@gmail.com">
 	<label>Cell #</label>
-	<input stye=phone phone_c="?">
+	<input type=phone id="phone_c">
 	<label>Home #</label>
-	<input stye=phone phone_h="?">
+	<input type=phone id="phone_h">
 	<label>Work #</label>
-	<input stye=phone phone_w=?>
-	</div>
+	<input type=phone name="phone_w">
+	<input type="button"  name="myVar" value="press"  onClick="bjTest()">
+	 
 </form>
 
 <div>
@@ -55,12 +92,11 @@ header {
 	<label>City  </label>
 	<label>State </label>
 	<input style="text">
+	
 </div>
 
-<script>
-alert("in appoinmneet");
-</script>
 
-<body>
+
+
 </body>
 </html>
