@@ -2,7 +2,12 @@
 <head>
     <style>
 
-        header { text-align: center;}
+        header { text-align: center;
+        background-color:salmon;
+        height: 60px;
+        margin: 24px 0;
+        width: 60%;
+        margin-left: 120px;}
 
         body { 
             background-color:rgb(218, 139, 194)
@@ -10,20 +15,22 @@
 
         .container {
             display: flex;
-            width:75%;
-            margin: auto;
+            justify-content: space-between;
+            width: 60%;
+            margin-left: 120px;
         }
        
         .pic {
-             flex: 3;
+             flex: 1;
             background-color: rgb(95, 97, 10);
             background-image: url("Images/head.jpg" );
+            height:240px; 
             background-size: cover;
             background-position: center;
             border: 3px black solid;
         }
         
-        .bio { flex: 4;
+        .bio { flex: 3;
             background-color: rgb(162, 172, 201);
             padding: 24px;margin-left: 24px;
             
